@@ -1,0 +1,120 @@
+<link
+  rel="stylesheet"
+  href="all.css"
+/>
+<div class="container">
+  <header class="header">
+    <h1 id="title" class="text-center">Survey Form</h1>
+    <p id="description" class="description text-center">
+      Thanks for your participation.
+    </p>
+  </header>
+  <form id="survey-form">
+    <div class="form-group">
+      <label id="name-label" for="name">Full Name</label>
+      <input
+        type="text"
+        name="name"
+        id="name"
+        class="form-control"
+        placeholder="Enter your name"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label id="email-label" for="email">Email</label>
+      <input
+        type="email"
+        name="email"
+        id="email"
+        class="form-control"
+        placeholder="Enter your Email"
+        required
+      />
+    </div>
+    <div class="form-group">
+      <label id="number-label" for="number"
+        >Age<span>(optional)</span></label
+      >
+      <input
+        type="number"
+        id="number"
+        name="age"
+        min="10"
+        max="99"
+        class="form-control"
+        placeholder="Age"
+      />
+    </div>
+    <div class="form-group">
+      <p>which ide is better for programming for you?</p>
+      <select id="dropdown" name="ide-best" class="form-control" required>
+        <option disabled selected value>Select best IDE</option>
+        <option value="bluej">BlueJ</option>
+        <option value="eclipse">Eclipse</option>
+        <option value="slickedit">SlickEdit</option>
+        <option value="codeblocks">CODE:: BLOCKS</option>
+        <option value="gnat-studio">GNAT Studio</option>
+        <option value="AWS-cloud9">AWS Cloud9</option>
+        <option value="codelite">CodeLite</option>
+        <option value="netbeans">NetBeans</option>
+        <option value="jetbrains">JetBrains</option>
+        <option value="codepen">Codepen</option>
+
+      </select>
+    </div>
+
+    <div class="form-group">
+      <p>Work experience programming?</p>
+      <label> <input name="work-experience" value="junior" type="radio" class="input-radio" checked=""  />Junior</label>
+      <label> <input name="work-experience" value="semi-senior" type="radio" class="input-radio"  />Semi senior</label>
+      <label> <input name="work-experience" value="senior" type="radio" class="input-radio"  />Senior</label>
+    </div>
+
+    <div class="form-group">
+      <p>
+        What database do you use more?
+      </p>
+      <select name="mostLike" class="form-control" required>
+        <option disabled selected value>Select an option</option>
+        <option value="challenges">Oracle</option>
+        <option value="projects">MySQL</option>
+        <option value="community">Microsoft SQL Server</option>
+        <option value="openSource">PostgreSQL. Web</option>
+        <option value="openSource">MongoDB</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <p>
+        Which of the following languages have you used or do you know??
+        <span class="clue">(Check all that apply)</span>
+      </p>
+      <label> <input name="prefer" value="python" type="checkbox" class="input-checkbox" />Python</label>
+      <label> <input name="prefer" value="java" type="checkbox" class="input-checkbox" />Java</label>
+      <label> <input name="prefer" value="javascript" type="checkbox" class="input-checkbox" />JavaScript</label>
+      <label> <input name="prefer" value="cshart" type="checkbox" class="input-checkbox" />C#</label>
+      <label> <input name="prefer" value="php" type="checkbox" class="input-checkbox" />PHP</label>
+      <label> <input name="prefer" value="c-cshart" type="checkbox" class="input-checkbox" />C/C++</label>
+      <label> <input name="prefer" value="typescript" type="checkbox" class="input-checkbox" />TypeScript</label>
+      <label> <input name="prefer" value="Swift" type="checkbox" class="input-checkbox" />Swift</label>
+      <label> <input name="prefer" value="objective-c" type="checkbox" class="input-checkbox" />Objective-C</label>
+
+    </div>
+
+    <div class="form-group">
+      <p>Any comments or suggestions?</p>
+      <textarea
+        class="input-textarea form-control"
+        name="comment"
+        placeholder="Enter your comment here..."
+      ></textarea>
+    </div>
+
+    <div class="form-group">
+      <button type="submit" id="submit">
+        Submit
+      </button>
+    </div>
+  </form>
+</div>
